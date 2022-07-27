@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+HTML {
+    font-size: 62.5%;
+}
+
+.container {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --dark-blue: #0566ea;
+    --primary-blue: #11c0f8;
+    --text-grey: #878787;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+.navbar {
+    align-items: center;
+    display: flex;
+    font-size: 1.7rem;
+    height: 15vh;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navbar .logo img {
+    height: 3.5rem;
+}
+
+.navbar .list {
+    align-items: center;
+    color: var(--text-grey);
+    display: flex;
+    font-weight: 600;
+    gap: 4rem;
+    list-style-type: none;
+}
+
+.navbar .list-item-active {
+    color: black;
+    font-weight: 700;
+}
+
+.btn-nav {
+    border-radius: 10px;
+    border: 2px solid var(--primary-blue);
+    cursor: pointer;
+    background: transparent;
+    font-size: 17px;
+    color: var(--primary-blue);
+    font-weight: 600;
+    padding: 1.5rem 4rem;
+}
+
+/* ------------------------------ */
+/* ---------- FEATURE ------------ */
+/* ------------------------------ */
+.feature {
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding: 0 10%;
+}
+
+.feature .left h3 {
+    font-size: 5.5rem;
+}
+
+.feature .left p {
+    color: var(--text-grey);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin: 4rem 0;
+}
+
+.feature-btn {
+    background: linear-gradient(to right bottom, var(--primary-blue), var(--dark-blue));
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0px 0px 5px 5px rgba(0, 92, 222, 0.2);
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1.7rem 4rem;
+}
+
+.feature-one .right img {
+    height: 45rem;
+}
+
+.feature-two .right img {
+    height: 40rem;
+}
+
+.feature-three .right img {
+    height: 60rem;
+}
+
+/* ------------------------------ */
+/* ---------- SERVICES ------------ */
+/* ------------------------------ */
+.services {
+    padding: 0 10%;
+}
+
+.services .headline {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+}
+
+.services .headline h2 {
+    color: black;
+    font-size: 5rem;
+}
+
+.services .headline p {
+    color: var(--text-grey);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+.services-cards {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 70px;
+    width: 100%;
+}
+
+.services-cards .card img {
+    height: 5rem;
+}
+
+.services-cards .card h4 {
+    color: black;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+}
+
+.services-cards .card p {
+    border-radius: 10px;
+    color: var(--text-grey);
+    font-size: 1.5rem;
+    line-height: 27px;
+    padding-bottom: 30px;
+}
+
+/* ------------------------------ */
+/* ---------- PRICING ------------ */
+/* ------------------------------ */
+.pricing-section {
+    background: linear-gradient(to bottom, var(--primary-blue), var(--dark-blue));
+    margin-top: 10rem;
+    padding-block: 6rem;
+    text-align: center;
+}
+
+.pricing-section h3 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 10%;
+    text-align: left;
+}
+
+.pricing .card {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 0 4rem 4rem 4rem;
+    position: relative;
+    width: 25%;
+}
+
+.pricing .card .top {
+    margin-bottom: 7rem;
+}
+
+.pricing .card.two {
+    padding: 0;
+    width: 30%;
+}
+
+.pricing .card.two .top {
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.pricing .card.two .middle {
+    margin-inline: 4rem;
+}
+
+.pricing .card .top h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 12px;
+    padding-top: 30px;
+}
+
+.pricing .card .top p {
+    color: var(--text-grey);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.middle ul {
+    list-style-type: none;
+}
+
+.middle ul li {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-bottom: 3rem;
+}
+
+.middle i {
+    border-radius: 10rem;
+    border: 3px solid var(--light-green);
+    color: var(--light-green);
+    height: 1.6rem;
+    margin-right: 1.8rem;
+    width: 1.6rem;
+}
+
+.bottom {
+    color: var(--text-grey);
+    margin-top: 60px;
+    text-align: center;
+}
+
+.bottom h4 {
+    color: black;
+    font-size: 3.2rem;
+}
+
+.bottom span {
+    color: var(--text-grey);
+}
+
+.bottom p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.btn-pricing {
+    background: transparent;
+    border-radius: 1rem;
+    border: 2px solid var(--primary-blue);
+    box-shadow: 0px 0px 5px 5px rgba(0, 92, 222, 0.2);
+    color: var(--primary-blue);
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    padding: 2rem 6rem;
+}
+
+.two .btn-pricing {
+    background: linear-gradient(to bottom, var(--primary-blue), var(--dark-blue));
+    color: white;
+}
+
+/* ------------------------------ */
+/* ---------- REVIEWS ------------ */
+/* ------------------------------ */
+.reviews-section {
+    background-color: white;
+}
+
+.reviews-section h1 {
+    color: black;
+    font-size: 5rem;
+    margin-top: 17rem;
+    text-align: center;
+}
+
+.reviews-section p {
+    color: var(--text-grey);
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.reviews-cards {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: 10%;
+    margin-top: 6rem;
+}
+
+.reviews-cards .card {
+    border-radius: 1rem;
+    border: 1px solid rgb(185, 185, 185);
+    padding-inline: 2.5rem;
+}
+
+.reviews-cards .card.one {
+    box-shadow: 5px 5px 10px 5px rgba(5, 5, 5, 0.05);
+}
+
+.reviews-cards .card p {
+    color: var(--text-grey);
+    font-size: 1.5rem;
+    margin-block: 1.5rem;
+    text-align: left;
+}
+
+.reviews-cards .card .user {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.user-img img {
+    height: 8rem;
+}
+
+.user-info h5 {
+    color: black;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+.user-info p {
+    font-size: 15px;
+    padding: 0;
+}
+
+/* ------------------------------ */
+/* ---------- REGISTER ------------ */
+/* ------------------------------ */
+.register {
+    align-items: center;
+    background-image: url('../assets/footer-bg.svg');
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    margin: 20rem 0;
+    padding: 0 10%;
+}
+
+.register .left h2 {
+    font-size: 5rem;
+}
+
+.register .left p {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+}
+
+.register-btn {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1.4px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1.5rem 4rem;
+}
+
+/* ------------------------------ */
+/* ---------- FOOTER ------------ */
+/* ------------------------------ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    padding: 3rem 10%;
+}
+
+.logo-desc {
+    flex: 1;
+}
+
+.logo-desc img {
+    height: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.logo-desc p {
+    color: var(--text-grey);
+    font-size: 1.6rem;
+}
+
+.footer-list {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+
+.footer-list h5 {
+    color: black;
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+}
+
+.footer-list li {
+    color: var(--text-grey);
+    font-size: 14px;
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.media-icons {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.media h5 {
+    text-align: center;
+}
+
+.media-icons img {
+    height: 3.2rem;
+}
