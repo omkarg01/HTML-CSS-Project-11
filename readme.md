@@ -5,7 +5,7 @@
 ![hitesh choudhary](https://img.shields.io/badge/Hitesh--Choudhary-Full--stack--JS--bootcamp-red)
 ![HTML & CSS](https://img.shields.io/badge/HTML-CSS-orange)
 
-## Project 11 [Live Link](https://62e436c90c6d7630ae1c956e--tangerine-cuchufli-c231eb.netlify.app/)
+## Project 11 [Live Link](https://hosting-og.netlify.app)
 
 -   Skills Gained in this project
     -   Learned to order the flex-boxes.
