@@ -26,9 +26,9 @@ HTML {
     align-items: center;
     display: flex;
     font-size: 1.7rem;
-    height: 15vh;
     justify-content: space-between;
     padding: 0 10%;
+    margin-top: 1rem;
 }
 
 .navbar .logo img {
@@ -58,6 +58,10 @@ HTML {
     color: var(--primary-blue);
     font-weight: 600;
     padding: 1.5rem 4rem;
+}
+
+.fa-solid.fa-bars {
+    display: none;
 }
 
 /* ------------------------------ */
@@ -446,4 +450,15 @@ HTML {
 
 .media-icons img {
     height: 3.2rem;
+}
+
+
+@media (width<=425px) {
+    .fa-solid.fa-bars {
+        display: block;
+    }
+
+    .navbar .list {
+        display: none;
+    }
 }
