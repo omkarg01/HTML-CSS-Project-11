@@ -70,17 +70,17 @@ HTML {
 .feature {
     align-items: center;
     display: flex;
-    height: 80vh;
+    /* height: 80vh; */
     justify-content: space-between;
     margin-top: 5rem;
     padding: 0 10%;
 }
 
-.feature .left h3 {
+.feature h3 {
     font-size: 5.5rem;
 }
 
-.feature .left p {
+.feature p {
     color: var(--text-grey);
     font-size: 1.4rem;
     font-weight: 400;
@@ -108,9 +108,11 @@ HTML {
     height: 40rem;
 }
 
+
 .feature-three .right img {
     height: 60rem;
 }
+
 
 /* ------------------------------ */
 /* ---------- SERVICES ------------ */
@@ -301,7 +303,7 @@ HTML {
 .reviews-section h1 {
     color: black;
     font-size: 5rem;
-    margin-top: 17rem;
+    margin-top: 12rem;
     text-align: center;
 }
 
@@ -312,6 +314,11 @@ HTML {
     line-height: 3rem;
     padding-top: 2rem;
     text-align: center;
+}
+
+.reviews-section > p{
+    width: 60%;
+    margin-inline: auto;
 }
 
 .reviews-cards {
@@ -339,7 +346,7 @@ HTML {
     text-align: left;
 }
 
-.reviews-cards .card .user {
+.card .user {
     display: flex;
     gap: 2rem;
     margin: 3rem 0;
@@ -369,10 +376,10 @@ HTML {
     background-repeat: no-repeat;
     color: white;
     display: flex;
-    height: 50vh;
+    /* height: 50vh; */
     justify-content: space-between;
-    margin: 20rem 0;
-    padding: 0 10%;
+    margin-top: 10rem;
+    padding: 8rem 10%;
 }
 
 .register .left h2 {
@@ -402,7 +409,7 @@ HTML {
 .footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 200px;
+    margin-top: 10rem;
     padding: 3rem 10%;
 }
 
@@ -461,4 +468,224 @@ HTML {
     .navbar .list {
         display: none;
     }
+
+    .feature {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .feature>.left {
+        width: 100%;
+        margin-block: 2rem;
+    }
+
+    .feature>.right {
+        width: 100%;
+    }
+
+    .feature h3 {
+        font-size: 2.5rem;
+    }
+
+    .feature .left p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-block: 1rem;
+    }
+
+    .feature-two .right{
+        order: 1;
+    }
+
+    .feature-one .right img {
+        height: 20rem;
+    }
+
+    .feature-two .right img {
+        height: 18rem;
+    }
+
+    .feature-three .right img {
+        height: 18rem;
+    }
+
+
+
+
+    .services .headline {
+        flex-direction: column;
+        width: 95%;
+        margin-top: 3rem;
+        margin-inline: auto;
+    }
+
+    .services .headline h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+
+    .services-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        text-align: center;
+        margin: 0;
+        margin-block: 3rem;
+    }
+
+
+    .pricing-section {
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+
+    .pricing-section h3{
+        font-size: 3rem;
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .pricing-section .pricing {
+        flex-direction: column;
+        width: 80%;
+        margin-inline: auto;
+        gap: 3rem;
+        margin-block: 0;
+        padding-top: 3rem;
+    }
+
+    .pricing>.card {
+        width: 100%;
+        margin: 0;
+        margin-inline: auto;
+        padding: 0;
+        /* padding-inline: 1px; */
+
+    }
+
+    .pricing>.card.one>.top,
+    .pricing>.card.one>.bottom,
+    .pricing>.card.one>.middle,
+    .pricing>.card.three>.top,
+    .pricing>.card.three>.bottom,
+    .pricing>.card.three>.middle {
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    .pricing>.card.two {
+        width: 100%;
+    }
+
+    .pricing>.card>.top {
+        margin-bottom: 3rem;
+    }
+
+    .pricing>.card>.top h4 {
+        padding: 0;
+        padding-block: 1rem;
+
+    }
+
+    .pricing>.card>.middle li {
+        padding-bottom: 1rem;
+    }
+
+    .pricing>.card>.bottom {
+        margin-block: 2rem;
+    }
+
+    .pricing>.card .btn-pricing {
+        margin-top: 1rem;
+    }
+
+    .pricing>.card.one .btn-pricing,
+    .pricing>.card.three .btn-pricing {
+        padding: 2rem 4rem;
+    }
+
+    .pricing > .bottom h4{
+        font-size: 1rem;
+    }
+
+    .reviews-section h1 {
+        margin-block: 3rem;
+        font-size: 4rem;
+    }
+
+    .reviews-section p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .reviews-cards {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0;
+        margin-block: 2rem;
+    }
+
+    .reviews-cards .card {
+        padding-inline: 1rem;
+    }
+
+    .reviews-cards .card p {
+        line-height: 2rem;
+        margin-top: 0;
+    }
+
+    .card .user {
+        margin-block: 1rem;
+    }
+
+    .register {
+        flex-direction: column;
+        background: linear-gradient(to bottom, var(--primary-blue), var(--dark-blue));
+        padding-block: 5rem;
+        margin-top: 0;
+    }
+
+    .register .left {
+        width: 100%;
+    }
+
+    .register .left h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .register .left p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        margin-block: 2rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .logo-desc {
+        text-align: center;
+    }
+
+    .footer-list {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .media {
+        flex: 2;
+    }
+
+    .media-icons {
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
